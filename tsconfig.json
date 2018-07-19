@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    // defines which version of JS the compiler should transpile into
+    "target": "es6",
+    "module": "commonjs",
+    "allowJs": true,
+    // This is disabled because it would generate a .js.map file for every .ts file in the project.
+    "sourceMap": false,
+    // Emit a single file with source maps instead of having a separate file.
+    "inlineSourceMap": true,
+    // This is a convenience flag that turns on a bunch of noX and strictX flags,
+    // some of which are redundantly set down below in case the convenience flag
+    // becomes inconvenient in the future.
+    "strict": true,
+    // Disallow null and undefined as values for non-nullable types.
+    "strictNullChecks": true,
+    // Raise error on expressions and declarations with an implied any type.
+    "noImplicitAny": true,
+    // Report error when not all code paths in function return a value.
+    "noImplicitReturns": true,
+    // Do not emit outputs if any errors were reported.
+    // This was enabled for no good reason. It may or may not speed up development.
+    "noEmitOnError": true,
+    // Special comment directives can be used to exclude code from coverage reports.
+    // Removing comments would remove these directives and lower code coverage stats.
+    "removeComments": false,
+    // This checks casing for import statements such as
+    // import X from 'X'
+    "forceConsistentCasingInFileNames": true,
+    // This was disabled because it conflicted with ES6 features.
+    "suppressImplicitAnyIndexErrors": false,
+    // Support JSX in .tsx files.
+    "jsx": "react",
+    // Watch input files and trigger recompilation on changes.
+    // Disabled because IntelliJ can take care of this.
+    "watch": false,
+    // Allows typescript to resolve import statement for react-redux
+    "moduleResolution": "node"
+  },
+  "types": [
+    //(various types, e.g. jquery, core-js),
+    "chrome"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
