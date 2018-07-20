@@ -10,5 +10,5 @@ ReactDOM.render(
   <Provider store={store}>
     <Counter/>
   </Provider>,
-  document.getElementById("example")
+  document.getElementById("app")
 );

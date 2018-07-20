@@ -12,6 +12,8 @@
   "dependencies": {
     "@types/react": "^16.4.6",
     "@types/react-dom": "^16.0.6",
+    "babel-plugin-emotion": "^9.2.6",
+    "emotion": "^9.2.6",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
