@@ -1,6 +1,6 @@
-import {ScoreState} from "./scoreState";
-import {reducer} from "../reducers/todoReducer";
-import {createStore, Store} from "redux";
+import { ScoreState } from "./scoreState";
+import { reducer } from "../reducers/todoReducer";
+import { createStore, Store } from "redux";
 import ActionTypes from "../actions/actionTypes";
 
 // Caveat: Store<S, A> here must match what we specified as our reducer type

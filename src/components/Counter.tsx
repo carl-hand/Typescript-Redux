@@ -83,7 +83,7 @@ const Counter = (props: CounterProps) => {
   };
 
   const decrement = () => {
-    props.decrement(2, 'Carl');
+    props.decrement(2, 'dude!');
   };
 
   return (
