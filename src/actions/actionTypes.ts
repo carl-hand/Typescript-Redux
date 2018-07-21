@@ -1,13 +1,8 @@
-// capturing the type annotation of our deleteTodo function
-// Now we don't need an separate interface for the DecrementScore
-// Advantage: Our action creator and Action types stay in Sync!!
-// and we only need to update our action creator
 import { decrement, increment } from "./actionCreators";
 
-type IncrementScore = ReturnType<typeof increment>;
+type increment = ReturnType<typeof increment>;
+type decrement = ReturnType<typeof decrement>;
 
-type DecrementScore = ReturnType<typeof decrement>;
-
-type ActionTypes = IncrementScore | DecrementScore;
+type ActionTypes = increment | decrement;
 
 export default ActionTypes;
